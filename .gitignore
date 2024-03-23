@@ -1,0 +1,29 @@
+# Fichiers générés par macOS
+.DS_Store
+
+# Fichiers générés par Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Environnements virtuels Python
+venv/
+*.venv
+venv.bak/
+.venv.bak/
+
+# Fichiers générés par Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media
+
+# Fichiers générés par les IDE et éditeurs de texte
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak

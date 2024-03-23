@@ -1,0 +1,38 @@
+- Créer un container d'environnement virtuel
+    python3 -m venv testdjango
+
+- activer  l'environnement virtuel
+    source testdjango/bin/activate
+
+- désactiver  l'environnement virtuel
+    deactivate
+
+- Dans l'E.V. : installer la version de django
+    //Latest
+    pip install django
+    ``` python
+    ``` import django
+
+    //spécifique 
+    pip install django==1.7
+
+- vérifier l'installation 
+    ```python
+    ```django.get_version()
+
+- nommer le projet 
+    django-admin startproject digit 
+
+- utiliser manage.py : équivalent d'un pack.json
+    cd digit
+    python manage.py
+
+
+- raccourcis : lancer un server 
+    ./manage.py runserver
+
+
+
+
+
+
