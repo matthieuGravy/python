@@ -1,0 +1,10 @@
+{% extends 'layout/base.html' %} {% block content %}
+<article>
+  <h1>#{{post.id}} - {{ post.title}}</h1>
+  <p>{{ post.content }}</p>
+</article>
+
+<hr />
+
+<p><a href="{% url 'blog:index' %}">Retour à la liste des posts</a></p>
+{% endblock %}

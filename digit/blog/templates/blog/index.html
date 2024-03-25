@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html' %} {% block content %}
+<!-- le signe | est un opérateur de filtre qui s'applique à une variable ou une expression-->
+<h1>index blog ({{ posts|length }} posts)</h1>
+
+<ul>
+  <!-- écriture qui permet d'ajouter le contenu de la variable posts (django template)   {{ posts }}-->
+  {% for post in posts %}
+  <li>
+    <h1>
+      <a href="{% url 'blog:show' post.id %}">{{ post.title | upper}}</a>
+    </h1>
+    <p>{{ post.content| truncatewords:3 }}</p>
+    <p><a href="{% url 'blog:show' post.id %}">Lire la suite</a></p>
+  </li>
+  {% if not forloop.last %}
+  <hr />
+  {% endif %} {% empty %}
+  <p>No posts yet</p>
+  {% endfor %}
+</ul>
+
+{% endblock %}

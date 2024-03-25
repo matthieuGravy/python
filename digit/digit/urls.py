@@ -24,6 +24,9 @@ from . import views
 """
 exprression régulière '^$' à revoir -> 404 
 """
+handler404 = views.error_404
+handler500 = views.error_500
+
 urlpatterns = [
     path('', views.home),
     path('contact/', views.contact),
