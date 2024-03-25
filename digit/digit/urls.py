@@ -32,5 +32,7 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('about/', views.about, name='about'),
     path('admin/', admin.site.urls, name='admin'),
-    path('blog/', include('blog.urls'), name='blog')
+    path('blog/', include('blog.urls'), name='blog'),
+    path("__debug__/", include("debug_toolbar.urls")),
+
 ]
