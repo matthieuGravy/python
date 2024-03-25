@@ -28,9 +28,9 @@ handler404 = views.error_404
 handler500 = views.error_500
 
 urlpatterns = [
-    path('', views.home),
-    path('contact/', views.contact),
-    path('about/', views.about),
-    path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls'))
+    path('', views.home, name='home'),
+    path('contact/', views.contact, name='contact'),
+    path('about/', views.about, name='about'),
+    path('admin/', admin.site.urls, name='admin'),
+    path('blog/', include('blog.urls'), name='blog')
 ]

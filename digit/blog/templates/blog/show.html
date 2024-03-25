@@ -1,4 +1,6 @@
-{% extends 'layout/base.html' %} {% block content %}
+{% extends 'layouts/base.html' %} {% block content %}
+<title>{% block title %}digit | Blog : {{ post.title}} {% endblock %}</title>
+
 <article>
   <h1>#{{post.id}} - {{ post.title}}</h1>
   <p>{{ post.content }}</p>

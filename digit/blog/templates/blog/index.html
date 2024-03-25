@@ -1,4 +1,6 @@
-{% extends 'layouts/base.html' %} {% block content %}
+{% include 'layouts/_nav.html' %} {% block content %}
+<title>{% block title %}digit | Blog {% endblock %}</title>
+
 <!-- le signe | est un opérateur de filtre qui s'applique à une variable ou une expression-->
 <h1>index blog ({{ posts|length }} posts)</h1>
 

@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Layout</title>
+    <title>{% block title %}digit {% endblock %}</title>
   </head>
   <body>
-    {% block content %}{% endblock %}
+    {% include 'layouts/_nav.html' %} {% block content %}{% endblock %}
   </body>
 </html>
